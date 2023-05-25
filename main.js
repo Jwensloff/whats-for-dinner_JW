@@ -45,3 +45,36 @@ var desserts= [
 'Tart Tatin',
 'Croissants',
 'Eclairs'];
+
+//........................query selectors ......................
+var cookingPot = document.querySelector('.cooking-pot');
+// var displaySide = document.querySelector('.side');
+// var displayDessert = document.querySelector('.dessert');
+// var displayMain = document.querySelector('.main');
+// var displayEntire = document.querySelector('.entire');
+var letsCookButton = document.querySelector('.lets-cook-button');
+var radioButtons = document.getElementsByName('dinner');
+//........................event listeners.......................
+
+letsCookButton.addEventListener('click', displayFood);
+
+//........................functions ............................
+var sideMainDessertEntree; 
+
+function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+  }
+
+  function hideCookingPot(){
+  cookingPot.classList.add('hidden');
+}
+
+
+// first select the value of the specified 
+function displayFood(){
+    for(var i=0; i < radioButtons.length; i++){ 
+        if(radioButtons[i].checked){
+          sideMainDessertEntree = radioButtons[i].value
+        }
+    } return sideMainDessertEntree
+} 
