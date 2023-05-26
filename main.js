@@ -54,6 +54,7 @@ var cookingPot = document.querySelector('.cooking-pot');
 // var displayEntire = document.querySelector('.entire');
 var letsCookButton = document.querySelector('.lets-cook-button');
 var radioButtons = document.getElementsByName('dinner');
+var removeCookingIcon = document.querySelector('right-box');
 //........................event listeners.......................
 
 letsCookButton.addEventListener('click', displayFood);
@@ -66,15 +67,18 @@ function getRandomIndex(array) {
   }
 
   function hideCookingPot(){
-  cookingPot.classList.add('hidden');
+  cookingPot.innerHTML=''
 }
 
 
 // first select the value of the specified 
 function displayFood(){
+    hideCookingPot(); 
     for(var i=0; i < radioButtons.length; i++){ 
         if(radioButtons[i].checked){
           sideMainDessertEntree = radioButtons[i].value
         }
-    } return sideMainDessertEntree
+    } 
+    return sideMainDessertEntree;
+    
 } 
