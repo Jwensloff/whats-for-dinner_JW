@@ -48,20 +48,21 @@ var desserts= [
 
 //........................query selectors ......................
 var cookingPot = document.querySelector('.cooking-pot');
-// var displaySide = document.querySelector('.side');
-// var displayDessert = document.querySelector('.dessert');
-// var displayMain = document.querySelector('.main');
-// var displayEntire = document.querySelector('.entire');
+var sideRadioButton = document.querySelector('.side');
+var dessertRadioButton = document.querySelector('.dessert');
+var mainRadioButton = document.querySelector('.main');
+var entireRadioButton = document.querySelector('.entire');
 var letsCookButton = document.querySelector('.lets-cook-button');
-var radioButtons = document.getElementsByName('dinner');
+// var radioButtons = document.getElementsByName('dinner');
 var rightBox = document.querySelector('.right-box');
 var foodSuggestion = document.querySelector('.food-suggestion');
 var youShouldMake = document.querySelector('.you-should-make');
-
+// var selectedRadioButton = document.querySelector('input[name="dinner"]:checked');
 //........................event listeners.......................
 
 letsCookButton.addEventListener('click', function(event){
         toggle(event)
+        displayFood()
 });
 
 //........................functions ............................
@@ -78,21 +79,37 @@ function toggle(){
 }
 
 // first select the value of the specified 
+// function displayFood(){
+//     for(var i=0; i < radioButtons.length; i++){ 
+//         if(radioButtons[i].checked){
+//           sideMainDessertEntree = radioButtons[i].value
+//         }
+//     } 
+//     return sideMainDessertEntree
+
+// }
+
 function displayFood(){
+      if (sideRadioButton.checked){
+            foodSuggestion.innerText = sides[getRandomIndex(sides)]
+    } else if (mainRadioButton.checked){
+            foodSuggestion.innerText = mains[getRandomIndex(mains)]
+    } else if (dessertRadioButton.checked){
+            foodSuggestion.innerText = desserts[getRandomIndex(desserts)]
+    } else if (entireRadioButton.checked) {
+                foodSuggestion.innerText = 'Sorry, you\'ll have to come up with something on your own'
+    } else {foodSuggestion.innerText = 'Please make a selection'
+    }
+}
 
 
-    for(var i=0; i < radioButtons.length; i++){ 
-        if(radioButtons[i].checked){
-          sideMainDessertEntree = radioButtons[i].value
-        }
-            console.log(sideMainDessertEntree)
-    } 
-    return sideMainDessertEntree
 
-//     var randomSide = sides[getRandomIndex(sides)];
-//     var randomMain = mains[getRandomIndex(mains)];
-//     var randomDessert = desserts[getRandomIndex(desserts)];
 
+
+
+// function showSuggestedFood(){
+//     selectedRadioButton.value
+// }
 //     if(sideMainDessertEntree.includes('Side')){
 //     rightBox.innerHTML=  `<h1>You should make:</h1>
 //                          <h2>${randomSide} </h2>`
@@ -105,4 +122,3 @@ function displayFood(){
 //  } else 
 // return 'sorry, we don\'t have that option.'
 
-}
