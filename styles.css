@@ -67,3 +67,7 @@ p {
     width: 25vh;
     height: auto;
 }
+
+.hidden{
+    display:none;
+}
