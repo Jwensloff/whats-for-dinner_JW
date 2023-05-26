@@ -11,62 +11,59 @@ body{
     font-family: 'Roboto', sans-serif;
     background-image: url(/Users/jocelynwensloff/turing_work/1mod/projects/solo_projects/whats-for-dinner_JW/assets/burger-friends.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     margin: 0;
 }
-
+h1{
+    display: flex;
+    justify-content: space-evenly;
+}
 .asterisk{
     color:#ee5253;
 }
 
 header {
     background-color: #0fb9b1;
-    font-size: 25px;
+    font-size: 3vh;
     font-weight: bold;
-    padding: 20px;
+    padding: 3vh;
 }
 
 article {
     background-color: rgba(225, 225, 225, .9);
-    width: 420px;
-    height: 400px
-}
-
-.left-box{
-    position: absolute;
-    top: 100px;
-    left: 125px;
+    width: 35%;
+    height: 60vh;
 }
 
 .button-header {
-    margin-top: 75px;
-    font-size: 25px;
+    margin-top: 13vh;
+    font-size: 3vh;
     font-weight: bold;
 }
 
 p {
-    font-size: 18px;
-    margin-left: 60px;
+    font-size: 2.5vh;
+    margin-left: 10vh;
 }
 
 .lets-cook-button {
     background-color: #0fb9b1 ;
     border-radius: 5px;
     border-color: #0fb9b1;
-    width: 200px;
-    height: 50px;
-    font-size: 18px;
-    margin-left: 60px
+    width: 25vh;
+    height: 7vh;
+    font-size: 2.5vh;
+    margin-left: 10vh
 }
 
 .right-box{
-    position: absolute;
-    top: 100px;
-    left: 725px;
-    display: grid;
-    place-items: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cooking-pot{
-    width: 125px;
+    width: 25vh;
     height: auto;
 }
