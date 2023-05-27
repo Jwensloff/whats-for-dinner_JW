@@ -14,10 +14,12 @@ body{
     background-repeat: no-repeat;
     margin: 0;
 }
+
 h1{
     display: flex;
     justify-content: space-evenly;
 }
+
 .asterisk{
     color:#ee5253;
 }
@@ -37,7 +39,7 @@ article {
 
 .button-header {
     margin-top: 13vh;
-    font-size: 3vh;
+    font-size: 3.5vh;
     font-weight: bold;
 }
 
@@ -57,13 +59,40 @@ p {
 }
 
 .right-box{
-
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column
 }
 
 .cooking-pot{
     width: 25vh;
     height: auto;
+}
+
+.hidden{
+    display:none;
+}
+
+h2{ margin-top: 15vh;
+    font-style: italic;
+    font-size: 3.5vh;
+}
+
+h3{
+font-size: 5vh;
+margin-bottom:15vh;
+text-align: center;
+}
+#clear-button {
+    position: absolute;
+    border-radius: 5px;
+    color:rgba(225, 225, 225, .9);
+    background-color: #95a5a6;
+    width: 15vh !important;
+    height: 5vh !important;
+    font-size: 2.5vh;
+    margin-bottom: 0;
+    margin-left: 53vh;
+    margin-top: 52vh;
 }
