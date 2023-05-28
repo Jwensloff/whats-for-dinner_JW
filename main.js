@@ -47,15 +47,20 @@ var desserts= [
 'Eclairs'];
 
 //........................query selectors ......................
+
+// image
 var cookingPot = document.querySelector('.cooking-pot');
+
+// text suggestions
+var foodSuggestion = document.querySelector('.food-suggestion');
+var youShouldMake = document.querySelector('.you-should-make');
+
+// buttons 
 var sideRadioButton = document.querySelector('.side');
 var dessertRadioButton = document.querySelector('.dessert');
 var mainRadioButton = document.querySelector('.main');
 var entireRadioButton = document.querySelector('.entire');
 var letsCookButton = document.querySelector('.lets-cook-button');
-var rightBox = document.querySelector('.right-box');
-var foodSuggestion = document.querySelector('.food-suggestion');
-var youShouldMake = document.querySelector('.you-should-make');
 var clearButton = document.querySelector('.clear-button');
 //........................event listeners.......................
 
@@ -83,6 +88,7 @@ function clearSelectedFood(){
     cookingPot.classList.remove('hidden');
     foodSuggestion.classList.add('hidden');
     youShouldMake.classList.add('hidden');
+    clearButton.classList.add('hidden');
 }
 
 function displayFood(){
@@ -101,7 +107,7 @@ function displayFood(){
                 !mainRadioButton.checked &&
                 !dessertRadioButton.checked &&
                 !entireRadioButton.checked){
-                foodSuggestion.innerText='Please select an option in order recieve a suggestion.';
+                foodSuggestion.innerText='Please select an option in order recieve a suggestion.'
                
             }
             clearButton.classList.remove('hidden');
