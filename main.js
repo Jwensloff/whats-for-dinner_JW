@@ -48,15 +48,17 @@ var desserts= [
 
 //........................query selectors ......................
 var cookingPot = document.querySelector('.cooking-pot');
+
 var sideRadioButton = document.querySelector('.side');
 var dessertRadioButton = document.querySelector('.dessert');
 var mainRadioButton = document.querySelector('.main');
 var entireRadioButton = document.querySelector('.entire');
 var letsCookButton = document.querySelector('.lets-cook-button');
-var rightBox = document.querySelector('.right-box');
-var foodSuggestion = document.querySelector('.food-suggestion');
-var youShouldMake = document.querySelector('.you-should-make');
 var clearButton = document.querySelector('.clear-button');
+
+var youShouldMake = document.querySelector('.you-should-make');
+var foodSuggestion = document.querySelector('.food-suggestion');
+
 //........................event listeners.......................
 
 letsCookButton.addEventListener('click', function(event){
@@ -83,6 +85,8 @@ function clearSelectedFood(){
     cookingPot.classList.remove('hidden');
     foodSuggestion.classList.add('hidden');
     youShouldMake.classList.add('hidden');
+    clearButton.classList.add('hidden');
+
 }
 
 function displayFood(){
