@@ -6,10 +6,10 @@ Are you feeling stumped on what you should make for dinner? Are you in a cooking
 
 ### Installation Instructions:
 
-    In order to access this website:
-        1. Clone this repository and associated files to your local computer.
-        2. After navigating to this directory within your files, open the website by typing 'open index.html' in your terminal.
-        3. Explore the application on the website.
+#### In order to access this website:
+1. Clone this repository and associated files to your local computer.
+2. After navigating to this directory within your files, open the website by typing 'open index.html' in your terminal.
+3. Explore the application on the website.
 
 ### Preview of App:
 
