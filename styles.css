@@ -9,7 +9,7 @@ red - #ee5253
 */
 body{
     font-family: 'Roboto', sans-serif;
-    background-image: url(/Users/jocelynwensloff/turing_work/1mod/projects/solo_projects/whats-for-dinner_JW/assets/burger-friends.jpg);
+    background-image: url(assets/burger-friends.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0;
@@ -84,6 +84,7 @@ font-size: 5vh;
 margin-bottom:15vh;
 text-align: center;
 }
+
 #clear-button {
     position: absolute;
     border-radius: 5px;
